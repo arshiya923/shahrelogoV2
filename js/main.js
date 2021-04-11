@@ -40,3 +40,15 @@ $('.submenu>a').focus(function () {
 }).blur(function () {
     $(this).parent().find('.submenu-container').fadeOut();
 });
+$('.gototop > img').on('click',function () {
+    $(window).scrollTop(0);
+})
+$(window).on( 'scroll', function(){
+    if (document.documentElement.scrollTop > 1)
+    {
+        $('.gototop > img').css('display', 'initial');
+    }
+    else{
+        $('.gototop > img').css('display', 'none');
+    }
+});
