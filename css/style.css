@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 @media screen and (min-width:425px)
 {
@@ -257,4 +258,16 @@ body {
 .submenu > div div{
     padding-top: 10px!important;
     padding-bottom: 10px!important;
+}
+.gototop{
+    position: fixed;
+    bottom: 3vw;
+    left: 3vw;
+}
+.gototop > img{
+    width: 60px;
+    width: 60px;
+    opacity: 0.4;
+    cursor: pointer;
+    display: none;
 }
