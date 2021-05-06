@@ -17,12 +17,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-@media screen and (min-width:425px)
-{
-    .title img{
-        width: 60vw!important;
-    }
-}
 @media screen and (min-width:493px)
 {
     .footer p{
@@ -46,9 +40,6 @@
     }
     .header-container{
         background-color: #16171A;
-    }
-    .title img{
-        width: 35vw!important;
     }
     .footer span{
         width: 25%!important;
@@ -77,7 +68,9 @@ body {
     font-family: 'Dana-regular', serif !important;
 }
 .header {
-    border-top: 5px #FFD100 solid;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 3px #FFD100 solid;
     background-color: #282828;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -108,7 +101,7 @@ body {
     background: #16171A;
     border: none;
     color: #FFF;
-    padding: 5px;
+    padding: 5px 15px;
 }
 .header input:focus {
     outline: none;
@@ -149,35 +142,29 @@ body {
     text-align: center;
     font-weight: 600;
     font-size: .9rem;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 
 }
-.submenu>a::after {
+.submenu-off>a::after {
     content: url(../assets/icons/ArrowDown-light.svg);
     vertical-align: sub;
     margin-right: 5px;
     color: #FFF;
 }
-.submenu:hover>a::after {
+.submenu-on>a::after{
     content: url(../assets/icons/ArrowDown-Dark.svg);
-}
-.nav-item>li:hover {
-    background-color: #FBCF16;
-}
-.nav-item>li:hover>a {
-    color: #212226!important;
+    vertical-align: sub;
+    margin-right: 5px;
+    color: #000;
 }
 .title{
-    background-color: #282828;
     border-radius: 25px;
-    padding: 25px 0!important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .title img{
-    width: 70vw;
-    height: 70%;
+    border-radius: 20px;
 }
 .description{
     line-height: .8rem;
@@ -216,7 +203,7 @@ body {
 }
 .footer{
     background-color: #282828;
-    border-top: 5px #FFD100 solid;
+    border-top: 4px #FFD100 solid;
 }
 .footer span{
     color: #AAA;
@@ -270,4 +257,16 @@ body {
     opacity: 0.4;
     cursor: pointer;
     display: none;
+}
+.page-link{
+    line-height: 40px!important;
+    padding:0!important;
+    width: 40px;
+}
+.card{
+    border-radius: 20px!important;
+}
+.sidebar a{
+    padding: .2rem .7rem;
+    border-radius: 20px;
 }
