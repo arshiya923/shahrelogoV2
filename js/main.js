@@ -20,7 +20,7 @@ function search() {
     else
     {
         $('.srch-icon').attr('src','assets/icons/Search.svg');
-        $('.sch').css('padding-right', '5px');
+        $('.sch').css('padding-right', '15px');
         $('.srch-icon').css({
             animation: 'none'
         });
@@ -52,3 +52,15 @@ $(window).on( 'scroll', function(){
         $('.gototop > img').css('display', 'none');
     }
 });
+
+$('.submenu-container').hover(function () {
+    $(this).parent().css('background-color', '#FBCF16');
+    $(this).parent().find('a').css('color', '#212226');
+    $(this).parent().addClass('submenu-on');
+    $(this).parent().removeClass('submenu-off');
+},function () {
+    $(this).parent().css('background-color', 'transparent');
+    $(this).parent().find('a').css('color', '#FFFFFF');
+    $(this).parent().addClass('submenu-off');
+    $(this).parent().removeClass('submenu-on');
+})
